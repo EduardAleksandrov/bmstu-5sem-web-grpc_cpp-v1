@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service SimpleMath {
+  rpc TimesTwo(ReqType) returns (RespType);
+}
+
+message ReqType {
+  int32 num = 1;
+}
+
+message RespType {
+  int32 num = 1;
+}
